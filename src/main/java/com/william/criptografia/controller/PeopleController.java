@@ -26,7 +26,7 @@ public class PeopleController {
         return peopleService.findOne(uuid);
     }
 
-    @GetMapping
+    @GetMapping("/all")
     private ResponseEntity<?> getAll(){
         return peopleService.findAll();
     }
