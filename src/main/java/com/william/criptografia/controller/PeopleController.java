@@ -1,7 +1,7 @@
 package com.william.criptografia.controller;
 
 import com.william.criptografia.dto.PeopleDto;
-import com.william.criptografia.service.CriptografadorAES;
+// import com.william.criptografia.service.CriptografadorAES;
 import com.william.criptografia.service.PeopleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -18,8 +18,8 @@ public class PeopleController {
     @Autowired
     private PeopleService peopleService;
 
-    @Autowired
-    private CriptografadorAES cript;
+    // @Autowired
+    // private CriptografadorAES cript;
 
     @PostMapping
     private ResponseEntity<?> createNew(@RequestBody PeopleDto req) {
